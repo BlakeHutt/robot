@@ -1,0 +1,5 @@
+place 0,0,south
+move
+move
+report
+
