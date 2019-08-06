@@ -23,9 +23,15 @@ public class runner{
             String tok[] = uInput.split(delim);
             
             if(tok[0].toUpperCase().equals("PLACE")){
-                robo.place(Integer.parseInt(tok[1]), 
-                        Integer.parseInt(tok[2]), tok[3]);
-                placeFirst = true;
+
+                if(area.isValid(Integer.parseInt(tok[1])) &&
+                        area.isValid(Integer.parseInt(tok[2]))){
+
+                    robo.place(Integer.parseInt(tok[1]),
+                            Integer.parseInt(tok[2]), tok[3]);
+                    placeFirst = true;
+                        }
+                //placeFirst = true;
             }
         }
     while(!cont){
