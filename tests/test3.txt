@@ -1,0 +1,2 @@
+place 6,6,north
+
